@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ICT Club Events</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+     body {
+      background-color: #f8f9fa;
+    }
+    .header {
+      background-color: #343a40;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 2px;
+    }
+    .slider-container {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 700%;
+      height: 100%;
+      animation: slide 60s infinite;
+    }
+
+    .slider img {
+      float: left;
+      width: calc(100% / 7);
+      height: 100%;
+    }
+    .slide-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    @keyframes slide {
+      0% {
+        left: 0;
+      }
+
+      14% {
+        left: 0;
+      }
+
+      20% {
+        left: -100%;
+      }
+
+      34% {
+        left: -100%;
+      }
+
+      40% {
+        left: -200%;
+      }
+
+      54% {
+        left: -200%;
+      }
+
+      60% {
+        left: -300%;
+      }
+
+      74% {
+        left: -300%;
+      }
+
+      80% {
+        left: -400%;
+      }
+
+      94% {
+        left: -400%;
+      }
+
+      100% {
+        left: -500%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="mb-0">ICT Club Events</h1>
+    <small>Join us for exciting events and workshops!</small>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide-item">
+              <img src="img/net.jpg" alt="Event 1">
+              <div class="slide-text">Event 1</div>
+            </div>
+            <div class="slide-item">
+              <img src="img/pro.jpg" alt="Event 2">
+              <div class="slide-text">Event 2</div>
+            </div>
+            <div class="slide-item">
+              <img src="img/new6.jpg" alt="Event 3">
+              <div class="slide-text">Event 3</div>
+            </div>
+            <div class="slide-item">
+              <img src="img/class.jpg" alt="Event 4">
+              <div class="slide-text">Event 4</div>
+            </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // Disable right-click on images
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable dragging of images
+    document.addEventListener('dragstart', event => event.preventDefault());
+  </script>
+</body>
+
+</html>
